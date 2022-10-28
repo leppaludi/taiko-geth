@@ -7,7 +7,7 @@ import (
 )
 
 var TaikoChainConfig = &ChainConfig{
-	ChainID:                       big.NewInt(167),
+	ChainID:                       big.NewInt(167001),
 	HomesteadBlock:                common.Big0,
 	EIP150Block:                   common.Big0,
 	EIP155Block:                   common.Big0,
