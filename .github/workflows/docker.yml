@@ -2,9 +2,6 @@ name: "Push docker image to GCR"
 
 on:
   push:
-    branches: [taiko]
-    tags:
-      - "v*"
 
 jobs:
   push-docker-image:
@@ -34,9 +31,6 @@ jobs:
           images: |
             gcr.io/evmchain/taiko-geth
           tags: |
-            type=ref,event=branch
-            type=ref,event=pr
-            type=ref,event=tag
             type=sha
 
       - name: Build and push
